@@ -1,0 +1,6 @@
+gradio
+langchain
+langchain-core
+langchain-openai
+langchain-community
+chromadb
