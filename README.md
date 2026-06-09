@@ -1,6 +1,6 @@
 # 🤖 智能编程助手 Agent
 
-一个基于 LangChain 1.x + LangGraph + 阿里百炼 + Gradio 的智能编程助手，支持安全代码执行、本地知识库检索（RAG）、多轮对话与免费额度管理。
+一个基于 LangChain 1.x + 阿里百炼 + Gradio 的智能编程助手，支持安全代码执行、本地知识库检索（RAG）、多轮对话与免费额度管理。
 
 [![Hugging Face Space](https://img.shields.io/badge/HuggingFace-Space-yellow)](https://huggingface.co/spaces/jieweisun/coding-agent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -9,7 +9,7 @@
 
 - 🔒 **安全代码执行**：通过子进程+临时文件+超时机制隔离执行 Python 代码
 - 📚 **本地知识库检索（RAG）**：基于 Chroma 向量库 + 阿里百炼 Embedding 检索私有文档
-- 💬 **多轮对话记忆**：基于 LangGraph Checkpointer 自动维护会话上下文
+- 💬 **多轮对话记忆**：自动维护会话上下文
 - 🔁 **工具自动重试**：代码执行出错时，Agent 自动分析并重试（最多3次）
 - 🎫 **免费额度管理**：基于 IP 的终身10次免费试用，超出后可填入自己的 API Key
 - 🌐 **Web 界面**：Gradio 构建的聊天界面，支持公网访问（Hugging Face Spaces）
@@ -23,7 +23,7 @@
 
 | 类别 | 技术 |
 |------|------|
-| Agent 框架 | LangChain 1.x + LangGraph |
+| Agent 框架 | LangChain 1.x  |
 | 大模型 | 阿里百炼 qwen-max |
 | 向量数据库 | Chroma |
 | Embedding | 阿里百炼 text-embedding-v3 |
